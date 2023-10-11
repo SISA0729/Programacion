@@ -4,10 +4,10 @@ public class Ejercicio19 {
     public static void main(String[] args) {
         int suma = 0;
 
-        for (int numero = 1; numero <= 10; numero++) {
-            suma += numero;
+        for (int i = 1; i <= 10; i++) {
+            suma += i;
         }
 
-        System.out.println("La suma de los números enteros del 1 al 10 es: " + suma);
+        System.out.println("La suma de los números es: " + suma);
     }
 }
