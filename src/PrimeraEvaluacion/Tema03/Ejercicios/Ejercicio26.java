@@ -8,7 +8,7 @@ public class Ejercicio26 {
             suma = suma + i;
             producto = producto *i;
         }
-        System.out.println("Suma = " + suma);
-        System.out.println("Producto = " + producto);
+        System.out.println("Suma = " + suma );
+        System.out.println("Producto = " + producto );
     }
 }
