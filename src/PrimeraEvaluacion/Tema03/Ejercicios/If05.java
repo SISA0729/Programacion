@@ -1,7 +1,6 @@
 package PrimeraEvaluacion.Tema03.Ejercicios;
 
 import java.util.Scanner;
-
 public class If05 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
@@ -15,6 +14,9 @@ public class If05 {
 
         if (usuario.equals(usuarioGuardado) && contraseña.equals(contraGuardado)){
             System.out.println("Has entrado al sistema!!");
+        }
+        else if (!contraseña.equals(contraGuardado) && !usuario.equals(usuarioGuardado)){
+            System.out.println("El usuario esta mal y la contraseña esta mal");
         }
         else if (!usuario.equals(usuarioGuardado)){
             System.out.println("El usuario es incorrecto");
