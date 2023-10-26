@@ -8,7 +8,7 @@ public class Ejercicio23 {
         System.out.print("Numero: ");
         int n = teclado.nextInt();
         System.out.print("Caracter: ");
-        char caracter = teclado.next().charAt(0);
+        char caracter = teclado.nextLine().charAt(0);
 
 
         for (int i = 0; i < n; i++) {
