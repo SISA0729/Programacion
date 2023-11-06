@@ -29,7 +29,8 @@ public class Ejercicio15 {
             case 7:
                 System.out.println("Domingo");
                 break;
-
+            default:
+                System.out.println("ERROR");
         }
     }
 }
