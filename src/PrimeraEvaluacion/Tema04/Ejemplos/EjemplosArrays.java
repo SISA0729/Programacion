@@ -34,7 +34,6 @@ public class EjemplosArrays {
             System.out.print(numeros[i] + " ");
         }
         System.out.println();
-        System.out.println(args.toString(numeros));
 
 
 
