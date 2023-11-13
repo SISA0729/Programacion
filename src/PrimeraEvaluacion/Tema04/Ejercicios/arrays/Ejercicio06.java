@@ -3,7 +3,7 @@ package PrimeraEvaluacion.Tema04.Ejercicios.arrays;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Eejercicio06 {
+public class Ejercicio06 {
     public static void main(String[] args) {
         int[] longitud = new int[20];
 
