@@ -14,7 +14,7 @@ public class P247 {
             System.out.println(Arrays.toString(arraylinea));
             n = teclado.nextInt();
             teclado.nextLine();
-            
+
         }
         teclado.close();
     }
