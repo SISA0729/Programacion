@@ -11,9 +11,23 @@ public class P247 {
         while (n != 0){
             String linea = teclado.nextLine();
             String[] arraylinea = linea.split(" ");
-            System.out.println(Arrays.toString(arraylinea));
-            n = teclado.nextInt();
-            teclado.nextLine();
+            //System.out.println(Arrays.toString(arraylinea));
+            int[] numeros = new int[arraylinea.length];
+            for (int i = 0; i < numeros.length; i++) {
+                numeros[i] = Integer.parseInt(arraylinea[i]);
+            }
+            boolean SalimosdeLaCrisis = true;
+            for (int i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] >= numeros[i + 1]){
+                    SalimosdeLaCrisis = false;
+                    break;
+                }
+            }
+            if (SalimosdeLaCrisis){
+                System.out.println("SI");
+            }else {
+                System.out.println("NO");
+            }
 
         }
         teclado.close();
