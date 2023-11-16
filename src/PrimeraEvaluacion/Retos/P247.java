@@ -28,6 +28,8 @@ public class P247 {
             }else {
                 System.out.println("NO");
             }
+            n = teclado.nextInt();
+            teclado.nextLine();
 
         }
         teclado.close();
