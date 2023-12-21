@@ -7,7 +7,7 @@ public class EjemplosMetodos {
         double n1 = num();
         double n2 = num();
         System.out.println(menu());
-        System.out.println(realizarOperacion(1,n1,n2)
+
 
     }
 
