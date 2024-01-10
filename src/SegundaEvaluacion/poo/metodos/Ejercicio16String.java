@@ -17,9 +17,7 @@ public class Ejercicio16String {
                     String palabra = pedirTexto("Introduce una palabra: ");
                     int contador = 0;
                     for (int i = 0; i < lista.length() ; i++) {
-                        if (palabra.equals(palabra[i])){
-                            contador++;
-                        }
+
                     }
                     break;
                 case 2:
