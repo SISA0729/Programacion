@@ -8,6 +8,25 @@ public class Paciente {
     private String[] sintomas;
 
 
+
+
+    public Paciente() {
+    }
+
+    public Paciente(String nombre, int edad, String[] sintomas) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sintomas = sintomas;
+    }
+
+    public Paciente(String nombre) {
+        this.nombre = nombre;
+        this.edad = 999;
+        this.sintomas = new String[] {"desconocido"};
+        // ademas le puedo decir que valores para los otros parametros
+        // sin o se la edad , que valga 999 por defecto
+    }
+
     public String getNombre() {
         return nombre;
     }
