@@ -1,9 +1,11 @@
 package SegundaEvaluacion.poo.clasesyobjetos.cajero;
 
 public class CuentaCorriente {
-    private String dni;
+     String dni;
     private String nombre;
     private double salario;
+
+    private String banco;
 
     public CuentaCorriente(String dni, double salario) {
         this.dni = dni;
@@ -14,6 +16,14 @@ public class CuentaCorriente {
         this.dni = dni;
         this.nombre = nombre;
         this.salario = salario;
+    }
+
+    public String getBanco() {
+        return banco;
+    }
+
+    public void setBanco(String banco) {
+        this.banco = banco;
     }
 
     public String getDni() {

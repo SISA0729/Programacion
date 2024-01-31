@@ -8,6 +8,14 @@ public class Main {
         CuentaCorriente cuentaCorriente3 = new CuentaCorriente("111111A","isamel",54004);
 
         System.out.println(cuentaCorriente3);
+        System.out.println("*********************** GESTOR ***********************");
+        Gestor gestor1 = new Gestor("ismaael","9929");
+
+        System.out.println(gestor1);
+        System.out.println(cuentaCorriente2);
+
+
+        System.out.println(cuentaCorriente2.dniº);
 
     }
 }
