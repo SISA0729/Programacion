@@ -15,7 +15,6 @@ public class Main {
         System.out.println(cuentaCorriente2);
 
 
-        System.out.println(cuentaCorriente2.dniº);
 
     }
 }
