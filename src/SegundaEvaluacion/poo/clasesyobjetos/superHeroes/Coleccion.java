@@ -21,5 +21,5 @@ public class Coleccion {
         this.nombreColeccion = nombreColeccion;
     }
 
-    
+
 }
