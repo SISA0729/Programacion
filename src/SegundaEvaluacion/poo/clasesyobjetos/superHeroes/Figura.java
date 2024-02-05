@@ -1,5 +1,4 @@
 package SegundaEvaluacion.poo.clasesyobjetos.superHeroes;
-import SegundaEvaluacion.poo.clasesyobjetos.*;
 
 public class Figura {
     private String codigo;
