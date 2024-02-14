@@ -7,6 +7,8 @@ public class Empleado extends Persona{
     protected LocalDate fecha_inicio;
     protected double salario;
 
+
+
     public LocalDate getFecha_inicio() {
         return fecha_inicio;
     }
@@ -21,5 +23,16 @@ public class Empleado extends Persona{
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "fecha_inicio=" + fecha_inicio +
+                ", salario=" + salario +
+                ", nombre='" + nombre + '\'' +
+                ", año=" + año +
+                ", direccion='" + direccion + '\'' +
+                '}';
     }
 }
