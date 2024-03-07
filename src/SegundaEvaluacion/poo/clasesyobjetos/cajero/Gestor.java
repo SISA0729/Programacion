@@ -1,25 +1,31 @@
 package SegundaEvaluacion.poo.clasesyobjetos.cajero;
 
 public class Gestor {
-    private String nombre;
+    // nombre, teléfono y el importe máximo autorizado con el que pueden operar.
+    public String nombre;
     private String telefono;
-     double importe;
+    double importeMaximoAutorizado; // default package, protección de paquete
 
-    private Gestor gestor;
+    // constructor/es
 
     public Gestor(String nombre, String telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
+        // si no se asigna el importe es 10000
+        this.importeMaximoAutorizado = 10000;
     }
 
-
-
-    public Gestor getGestor() {
-        return gestor;
+    // para asignar un importe máximo al crear un gestor tenemos que poner otro constructor que sí lo incluya
+    public Gestor(String nombre, String telefono, double importeMaximoAutorizado) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.importeMaximoAutorizado = importeMaximoAutorizado;
     }
 
-    public void setGestor(Gestor gestor) {
-        this.gestor = gestor;
+    // Un gestor, una vez asignado, no podrá cambiar su número de teléfono. Y todo el mundo podrá consultarlo
+
+    public String getTelefono() {
+        return telefono;
     }
 
     @Override
@@ -27,8 +33,7 @@ public class Gestor {
         return "Gestor{" +
                 "nombre='" + nombre + '\'' +
                 ", telefono='" + telefono + '\'' +
-                ", importe=" + importe +
-                ", gestor=" + gestor +
+                ", importeMaximoAutorizado=" + importeMaximoAutorizado +
                 '}';
     }
 }

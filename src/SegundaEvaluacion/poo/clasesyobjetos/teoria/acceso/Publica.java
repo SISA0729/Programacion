@@ -1,5 +1,5 @@
 package SegundaEvaluacion.poo.clasesyobjetos.teoria.acceso;
 
 public class Publica {
-    public String atributoPublico;
-}
+    // a este atributo puedo acceder desde todas partes
+    public String atributoPublico;}

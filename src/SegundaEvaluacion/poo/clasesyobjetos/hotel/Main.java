@@ -5,11 +5,13 @@ import SegundaEvaluacion.poo.clasesyobjetos.avion.Avion;
 public class Main {
     public static void main(String[] args) {
 
-        Hotel sisa = new Hotel(1,Zona.playa, 5000);
-
-        System.out.println(sisa);
-        sisa.setPrecio(600);
-        System.out.println(sisa);
+        // aquí creamos los objetos
+        Hotel hotel1 = new Hotel(1, Zona.PLAYA, 75);
+        System.out.println(hotel1);
+        hotel1.setPrecio(600);
+        System.out.println(hotel1);
+        hotel1.setPrecio(60);
+        System.out.println(hotel1);
         
     }
 }

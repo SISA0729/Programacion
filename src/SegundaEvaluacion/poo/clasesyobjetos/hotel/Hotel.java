@@ -1,15 +1,20 @@
 package SegundaEvaluacion.poo.clasesyobjetos.hotel;
 
 public class Hotel {
+    // atributos
     private int idHotel;
     private Zona zona;
     private double precio;
+
+    // constructor
 
     public Hotel(int idHotel, Zona zona, double precio) {
         this.idHotel = idHotel;
         this.zona = zona;
         this.precio = precio;
     }
+
+    // getters y seters
 
     public int getIdHotel() {
         return idHotel;
@@ -32,21 +37,22 @@ public class Hotel {
     }
 
     public void setPrecio(double precio) {
-        if (precio > 39 && precio < 501){
+        if (precio >= 40 && precio <= 500) {
             this.precio = precio;
-        }else {
-            System.out.println("ERROR");
+        } else {
+            System.out.println("El precio debe estar entre 40€ y 500€");
         }
     }
 
+
+    // toString
+
     @Override
     public String toString() {
-        return "Hotel{" +
-                "idHotel=" + idHotel +
-                ", zona=" + zona +
-                ", precio=" + precio +
-                '}';
+        return idHotel + " - " + "\tUbicado en: " + zona + "\tPrecio por noche: " + precio + " €";
     }
 
+
+    // métodos personalizados
 
 }

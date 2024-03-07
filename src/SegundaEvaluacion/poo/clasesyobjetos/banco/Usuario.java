@@ -1,15 +1,20 @@
 package SegundaEvaluacion.poo.clasesyobjetos.banco;
 
 public class Usuario {
+    // atributos
     private String login;
     private String nombre;
     private String apellidos;
+
+    // constructor parametrizado
 
     public Usuario(String login, String nombre, String apellidos) {
         this.login = login;
         this.nombre = nombre;
         this.apellidos = apellidos;
     }
+
+    // getters y setters
 
     public String getLogin() {
         return login;
@@ -35,9 +40,11 @@ public class Usuario {
         this.apellidos = apellidos;
     }
 
+    // toString()
+
     @Override
     public String toString() {
-        return "nombre ='" + nombre + '\'' +
-                " apellidos ='" + apellidos + '\'';
+        return " nombre= "+ nombre
+                + ", apellidos='" + apellidos + '\'';
     }
 }

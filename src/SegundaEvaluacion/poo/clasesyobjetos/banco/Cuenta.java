@@ -5,11 +5,14 @@ public class Cuenta {
     private float balance;
     private Usuario propietario;
 
+    // constructor parametrizado
     public Cuenta(String codigo, float balance, Usuario propietario) {
         this.codigo = codigo;
         this.balance = balance;
         this.propietario = propietario;
     }
+
+    // getters y setters
 
     public String getCodigo() {
         return codigo;
@@ -35,10 +38,14 @@ public class Cuenta {
         this.propietario = propietario;
     }
 
+    // toString()
+
     @Override
     public String toString() {
-        return "codigo='" + codigo + '\'' +
+        return "Cuenta{" +
+                "codigo='" + codigo + '\'' +
                 ", balance=" + balance +
-                ", propietario=" + propietario;
+                ", propietario=" + propietario +
+                '}';
     }
 }
