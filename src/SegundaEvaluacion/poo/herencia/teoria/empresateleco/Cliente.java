@@ -2,21 +2,24 @@ package SegundaEvaluacion.poo.herencia.teoria.empresateleco;
 
 public class Cliente extends Persona{
     protected String idContrato;
-    protected boolean status;
+    protected boolean gold;
 
-    public Cliente(String idContrato, boolean status) {
+    public Cliente(String nombre, int añoNacimiento, String dirección, String idContrato, boolean gold) {
+        super(nombre, añoNacimiento, dirección);
         this.idContrato = idContrato;
-        this.status = status;
+        this.gold = gold;
     }
+
+    // aquí irían los getters y setters public para todos los atributos
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "idContrato='" + idContrato + '\'' +
-                ", status=" + status +
+                ", gold=" + gold +
                 ", nombre='" + nombre + '\'' +
-                ", año=" + año +
-                ", direccion='" + direccion + '\'' +
+                ", añoNacimiento=" + añoNacimiento +
+                ", dirección='" + dirección + '\'' +
                 '}';
     }
 }

@@ -3,26 +3,20 @@ package SegundaEvaluacion.poo.herencia.teoria.ejemplopolimorfismo;
 public class Fichero {
     protected String nombreCompleto;
 
+    // constructor con un parámetro
+
     public Fichero(String nombreCompleto) {
         this.nombreCompleto = nombreCompleto;
     }
 
-    public String getNombreCompleto() {
-        return nombreCompleto;
-    }
+    // getters y setters
 
-    public void setNombreCompleto(String nombreCompleto) {
-        this.nombreCompleto = nombreCompleto;
+    protected String getInfoFichero() {
+        return "Fichero: " + nombreCompleto;
     }
-    protected String getInfoFichero(){
-        return "Fichero" + nombreCompleto;
-    }
-
-    public void imprimeInfoFichero (){
-        String info = this.getInfoFichero();
+    public void imprimeInfoFichero() {
+        String info = this.getInfoFichero(); // comportamiento polimórfico
         System.out.println(info);
     }
-
-
 
 }

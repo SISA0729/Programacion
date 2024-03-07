@@ -4,35 +4,44 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class Empleado extends Persona{
-    protected LocalDate fecha_inicio;
-    protected double salario;
+    protected LocalDate fechaInicio;
+    protected Long salario;
 
+    // constructor de la subclase: tiene que empezar llamando al constructor de la superclase con la palabra super
 
-
-    public LocalDate getFecha_inicio() {
-        return fecha_inicio;
+    public Empleado(String nombre, int añoNacimiento, String dirección, LocalDate fechaInicio, Long salario) {
+        super(nombre, añoNacimiento, dirección);
+        this.fechaInicio = fechaInicio;
+        this.salario = salario;
     }
 
-    public void setFecha_inicio(LocalDate fecha_inicio) {
-        this.fecha_inicio = fecha_inicio;
+
+    // aquí irían los getters y setters public para todos los atributos
+
+    public LocalDate getFechaInicio() {
+        return fechaInicio;
     }
 
-    public double getSalario() {
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public Long getSalario() {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    public void setSalario(Long salario) {
         this.salario = salario;
     }
 
     @Override
     public String toString() {
         return "Empleado{" +
-                "fecha_inicio=" + fecha_inicio +
+                "fechaInicio=" + fechaInicio +
                 ", salario=" + salario +
                 ", nombre='" + nombre + '\'' +
-                ", año=" + año +
-                ", direccion='" + direccion + '\'' +
+                ", añoNacimiento=" + añoNacimiento +
+                ", dirección='" + dirección + '\'' +
                 '}';
     }
 }

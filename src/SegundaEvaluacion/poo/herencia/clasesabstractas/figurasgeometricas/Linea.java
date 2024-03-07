@@ -1,31 +1,31 @@
 package SegundaEvaluacion.poo.herencia.clasesabstractas.figurasgeometricas;
 
 public class Linea {
-    final int dimensiones = 1;
-    Punto puntoinicio;
-    Punto puntofinal;
+    final int DIMENSIONES = 1;
+    Punto puntoInicio;
+    Punto puntoFin;
 
-    public Linea(Punto puntoinicio, Punto puntofinal) {
-        this.puntoinicio = puntoinicio;
-        this.puntofinal = puntofinal;
+    public Linea(Punto puntoInicio, Punto puntoFin) {
+        this.puntoInicio = puntoInicio;
+        this.puntoFin = puntoFin;
     }
 
-    public double calcularLongitud(){
-        return  Math.sqrt(Math.pow(puntofinal.x - puntoinicio.x, 2) + Math.pow
-                (puntofinal.y - puntoinicio.y, 2));
+    public double calcularLongitud() {
+        return Math.sqrt(Math.pow(puntoFin.x - puntoInicio.x, 2)
+                + Math.pow(puntoFin.y - puntoInicio.y, 2));
     }
 
     @Override
     public String toString() {
-        return puntoinicio + " , "  + puntofinal + " = " + this.calcularLongitud();
+        return puntoInicio + " - " + puntoFin + " longitud:" +this.calcularLongitud();
     }
 
-    public void dibujarLInea(){
+    public void dibujarLinea() {
         int longitud = (int) this.calcularLongitud();
         for (int i = 0; i < longitud; i++) {
             System.out.print("_");
         }
         System.out.println();
-
     }
+
 }

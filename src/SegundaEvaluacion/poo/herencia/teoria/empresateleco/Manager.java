@@ -1,9 +1,20 @@
 package SegundaEvaluacion.poo.herencia.teoria.empresateleco;
 
+import java.time.LocalDate;
+
 public class Manager extends Empleado{
     protected boolean sonrisa;
 
-    public Manager(boolean sonrisa) {
+    public Manager(String nombre, int añoNacimiento, String dirección, LocalDate fechaInicio, Long salario, boolean sonrisa) {
+        super(nombre, añoNacimiento, dirección, fechaInicio, salario);
+        this.sonrisa = sonrisa;
+    }
+
+    public boolean isSonrisa() {
+        return sonrisa;
+    }
+
+    public void setSonrisa(boolean sonrisa) {
         this.sonrisa = sonrisa;
     }
 
@@ -11,11 +22,11 @@ public class Manager extends Empleado{
     public String toString() {
         return "Manager{" +
                 "sonrisa=" + sonrisa +
-                ", fecha_inicio=" + fecha_inicio +
+                ", fechaInicio=" + fechaInicio +
                 ", salario=" + salario +
                 ", nombre='" + nombre + '\'' +
-                ", año=" + año +
-                ", direccion='" + direccion + '\'' +
+                ", añoNacimiento=" + añoNacimiento +
+                ", dirección='" + dirección + '\'' +
                 '}';
     }
 }

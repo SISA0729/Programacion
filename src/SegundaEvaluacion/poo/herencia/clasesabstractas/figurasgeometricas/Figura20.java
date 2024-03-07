@@ -10,20 +10,19 @@ public abstract class Figura20 {
         this.lados = lados;
     }
 
-    public String nombreFigura(){
-        if (lados == 3){
-            return "Triangulo";
-        }else if (lados == 4){
-            return "Rectangulo";
-        }else {
-            return " añadiremos figuras de " + lados + " em el futuro.";
+    // este método devuelve rectángulo o triángulo según el número de lados de la figura
+    public String nombreFigura() {
+        if (lados == 3) {
+            return "triángulo";
+        } else if (lados == 4) {
+            return "rectángulo";
+        } else {
+            return " gracias por la sugerencia; añadiremos figuras de " + lados + " lados en el futuro";
         }
     }
+
+    // métodos abstracto: los declaro pero no los desarrollo
     public abstract ArrayList<Linea> crearLineas();
-
     public abstract double calcularPerimetro();
-
     public abstract double calcularArea();
-
-
 }

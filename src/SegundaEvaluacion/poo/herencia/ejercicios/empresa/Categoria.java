@@ -1,5 +1,11 @@
 package SegundaEvaluacion.poo.herencia.ejercicios.empresa;
 
 public enum Categoria {
-    sisa,
+    CEO,
+    COO,
+    CTO,
+    CFO,
+    CCO,
+    CMO,
+    CIO
 }
