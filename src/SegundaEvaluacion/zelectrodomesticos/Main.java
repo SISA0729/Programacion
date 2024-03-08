@@ -1,4 +1,4 @@
-package zelectrodomesticos;
+package SegundaEvaluacion.zelectrodomesticos;
 
 public class Main {
     public static void main(String[] args) {
