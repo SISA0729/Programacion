@@ -56,4 +56,7 @@ public class Socio implements Comparable{
             return 0;
         }
     }
+
+
+
 }

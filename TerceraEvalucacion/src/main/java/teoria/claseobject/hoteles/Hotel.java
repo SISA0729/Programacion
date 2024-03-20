@@ -62,6 +62,13 @@ public class Hotel implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        Hotel h = (Hotel) o;
+        if (this.precio > h.precio){
+            return -1;
+        }else if (this.precio < h.precio){
+            return 1;
+        }else {
+            return 0;
+        }
     }
 }
