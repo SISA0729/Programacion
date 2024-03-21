@@ -37,6 +37,7 @@ public class Main {
         socios.sort(naci.reversed());
         imprimir(socios);
 
+
     }
 
     public static void imprimir(ArrayList<Socio> socios){
@@ -44,4 +45,6 @@ public class Main {
             System.out.println(socio);
         }
     }
+
+
 }
