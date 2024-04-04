@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +38,21 @@ public class Main {
         socios.sort(naci.reversed());
         imprimir(socios);
 
+        Comparator comparator = new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                Socio s1 = (Socio) o1;
+                Socio s2 = (Socio) o2;
+
+                if (s1.getFechaNacimiento().isBefore(s2.getFechaNacimiento())){
+                    return -1;
+                } else if (s1.getFechaNacimiento().isAfter(s2.getFechaNacimiento())){
+                    return 1;
+                }else {
+                    return 0;
+                }
+            }
+        };
 
     }
 

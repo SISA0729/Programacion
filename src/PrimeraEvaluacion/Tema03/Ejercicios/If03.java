@@ -2,37 +2,53 @@ package PrimeraEvaluacion.Tema03.Ejercicios;
 
 import java.util.Scanner;
 
-public class If03 {
+public class IF03 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.print("Numero 1: ");
-        int n1 = teclado.nextInt();
-        System.out.print("Numero 2: ");
-        int n2 = teclado.nextInt();
-        System.out.print("NUmero 3: ");
-        int n3 = teclado.nextInt();
-        System.out.print("Numero 4: ");
-        int n4 = teclado.nextInt();
-        System.out.print("Numero 5: ");
-        int n5 = teclado.nextInt();
 
-        if (n1 > n2 && n1 > n3 && n1 > n4 && n1 > n5){
-            System.out.println("El numero " + n1 + " es mayor");
-        }
-        else if (n2 > n3 && n2 > n4 && n2 > n5 && n2 > n1){
-            System.out.println("El numero " + n2 + " es mayor");
-        }
-        else if (n3 > n4 && n3 > n5 && n3 > n2 && n3 > n1){
-            System.out.println("El numero " + n3 + " es mayor");
-        }
-        else  if (n4 > n5 && n4 > n1 && n4 > n2 && n4 > n1){
-            System.out.println("El numero "+  n4 + " es mayor");
-        }
-        else if (n5 > n1 && n5 > n2 && n5 > n3 && n5 > n4){
-            System.out.println("El numero "+ n5 + " es mayor");
+        System.out.print("Ingrese el primer número: ");
+        int numero1 = teclado.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int numero2 = teclado.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+        int numero3 = teclado.nextInt();
+
+        System.out.print("Ingrese el cuarto número: ");
+        int numero4 = teclado.nextInt();
+
+        System.out.print("Ingrese el quinto número: ");
+        int numero5 = teclado.nextInt();
+
+        int mayor = numero1;
+        int menor = numero1;
+
+        if (numero2 > mayor) {
+            mayor = numero2;
+        } else if (numero2 < menor) {
+            menor = numero2;
         }
 
+        if (numero3 > mayor) {
+            mayor = numero3;
+        } else if (numero3 < menor) {
+            menor = numero3;
+        }
 
+        if (numero4 > mayor) {
+            mayor = numero4;
+        } else if (numero4 < menor) {
+            menor = numero4;
+        }
 
+        if (numero5 > mayor) {
+            mayor = numero5;
+        } else if (numero5 < menor) {
+            menor = numero5;
+        }
+
+        System.out.println("El número mayor es: " + mayor);
+        System.out.println("El número menor es: " + menor);
     }
 }
