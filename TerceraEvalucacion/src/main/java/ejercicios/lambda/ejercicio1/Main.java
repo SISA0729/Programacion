@@ -62,8 +62,21 @@ public class Main {
         personas.add(new Personas("Sisa",21));
         personas.add(new Personas("ismael",20));
         personas.add(new Personas("vasquez",12));
+        System.out.println("Recién creada la lista: ");
+        System.out.println(personas);
 
+        //1) Ordena por edades de menor a mayor+
+        //personas.sort((p1,p2) -> p1.getEdad() - p2.getEdad());
+        //System.out.println("\nOrdenados por edad (de menor a mayor)");
+        //System.out.println(personas);
 
+        //2) COgemos el que haya quedado primero
+        System.out.println("Personas más joven" + personas.get(0));
+
+        // si nos pidieran sin volver a ordnar el ultimo elemento de la lista
+        //System.out.println(personas.get(personas.size() - 1));
+
+        //07....... personas que tienen una edad mayor a 30
 
     }
 
