@@ -20,6 +20,18 @@ public class Main {
         socios.add(socio3);
         socios.add(socio4);
 
+        //PREDICADOS EN UNA LISTA
+        System.out.println(socios);
+        socios.removeIf(socio -> socio.getNombre().startsWith("B"));
+        //eliminar los nombres emoiezen por B
+        System.out.println(socios);
+
+        socios.add(socio2);
+        socios.removeIf(socio -> socio.getFechaNacimiento().isBefore(LocalDate.of(2000,1,1)));
+        System.out.println(socios);
+
+
+
         //Collections.sort(socios);
         System.out.println("ORDEN NORMAL: ");
         System.out.println("==============================");
