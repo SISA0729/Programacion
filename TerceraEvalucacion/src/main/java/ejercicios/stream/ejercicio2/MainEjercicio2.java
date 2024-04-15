@@ -21,10 +21,12 @@ public class MainEjercicio2 {
         System.out.println("\nFiltrar los personajes que no usan espada. \n");
         personajes.stream().filter(personaje -> personaje.getArma() != "Espada").forEach(n -> System.out.println(n + " "));
         System.out.println("\nMuestra los personajes ordenados por orden alfabético.\n");
-        personajes.stream().sorted(((n, o ) -> o.compareTo(n))
+        personajes.stream().sorted((p1,p2) -> p1.getNombre().compareTo(p2.getNombre())).forEach(n -> System.out.println(n + " "));
 
         System.out.println("\nMuestra los personajes humanos.\n");
-        System.out.println("\nMuestra el personaje más viejo.\n");
+        personajes.stream().filter(personaje -> personaje.isHumano()).forEach(n -> System.out.println(n + " "));
 
+        System.out.println("\nMuestra el personaje más viejo.\n");
+        personajes.stream().sorted((p1,p2) -> p2.getEdad() - p1.getEdad()).limit(1).forEach(n -> System.out.println(n + " "));
     }
 }
