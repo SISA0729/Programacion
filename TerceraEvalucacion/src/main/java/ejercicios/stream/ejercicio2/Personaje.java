@@ -47,11 +47,15 @@ public class Personaje {
 
     @Override
     public String toString() {
-        return "Personaje{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", arma='" + arma + '\'' +
-                ", humano=" + humano +
-                '}';
+        String h;
+        if (humano){
+            h = "humano ";
+        }else {
+            h = "no humano ";
+        }
+        return nombre + " | "  +
+                " | " + edad +
+                " | " + arma + " | " +
+                " | " + h;
     }
 }
