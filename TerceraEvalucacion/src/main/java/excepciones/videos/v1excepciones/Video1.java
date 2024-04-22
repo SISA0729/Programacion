@@ -41,7 +41,5 @@ public class Video1 {
              System.out.println("Tienes que inicializar la cadena con algun valor");
          }
 
-         SUPER CALI FRAGI LISTICO ESPI A LIDOSO;
-         CICLO PENTANO PERIDRO FENAN TRENO
     }
 }
