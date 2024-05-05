@@ -12,6 +12,7 @@ public class MainEjercicio1 {
         for (int i = 0; i < 20; i++) {
             numero.add(generado.nextInt(1,16));
         }
+        numero.stream().sorted(Comparator.reverseOrder()).filter(n -> n >= 5).distinct().forEach(n -> System.out.println(n + " "));
 
 
 
@@ -61,6 +62,7 @@ public class MainEjercicio1 {
         System.out.println("Otra forma: ");
         suma = numero.stream().mapToInt(n -> n).sum();
         System.out.println(suma);
+
 
         System.out.println("\n\nSuma todos los elementos mayores o iguales a 5 (también los que se repitan) e imprime el resultado.\n");
         int suna = numero.stream()
