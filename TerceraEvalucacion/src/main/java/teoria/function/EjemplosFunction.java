@@ -1,6 +1,6 @@
 package teoria.function;
 
-import ejercicios.lambda.ejercicio1.Persona;
+import ejercicios.lambda.ejercicio1.Personas;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,13 +17,13 @@ public class EjemplosFunction {
         System.out.println(resultado);
 
         // vamos a poner un ejemplo de replaceAll con una lista de personas
-        List<ejercicios.lambda.ejercicio1.Persona> personas = new ArrayList<>();
-        personas.add(new ejercicios.lambda.ejercicio1.Persona("Carlos", 29));
-        personas.add(new ejercicios.lambda.ejercicio1.Persona("Óscar", 15));
-        personas.add(new ejercicios.lambda.ejercicio1.Persona("Kamilly", 18));
-        personas.add(new ejercicios.lambda.ejercicio1.Persona("Sergio",  13));
-        personas.add(new ejercicios.lambda.ejercicio1.Persona("Ana",  8));
-        personas.add(new Persona("Alejandro",  55));
+        List<ejercicios.lambda.ejercicio1.Personas> personas = new ArrayList<>();
+        personas.add(new ejercicios.lambda.ejercicio1.Personas("Carlos", 29));
+        personas.add(new ejercicios.lambda.ejercicio1.Personas("Óscar", 15));
+        personas.add(new ejercicios.lambda.ejercicio1.Personas("Kamilly", 18));
+        personas.add(new ejercicios.lambda.ejercicio1.Personas("Sergio",  13));
+        personas.add(new ejercicios.lambda.ejercicio1.Personas("Ana",  8));
+        personas.add(new Personas("Alejandro",  55));
         System.out.println("Recién creada la lista: ");
         System.out.println(personas);
 
