@@ -1,6 +1,8 @@
 package ejercicios.comparator.personas;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,6 +36,14 @@ public class Main {
         System.out.println("Imvertimos la edad: ");
         personas.sort(compararEdad.reversed());
         imprimir(personas);
+
+
+        // Utilizar un Comparator para ordenar la lista por edad de menor a mayor
+        Collections.sort(personas, Comparator.comparingInt(Personas::getEdad));
+
+        // Imprimir la lista ordenada
+        System.out.println("Lista de personas ordenada por edad (de menor a mayor):");
+        personas.forEach(System.out::println);
 
     }
     public static void imprimir(ArrayList<Personas> personas){
