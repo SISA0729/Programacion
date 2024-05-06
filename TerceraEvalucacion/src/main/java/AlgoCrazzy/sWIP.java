@@ -23,7 +23,7 @@ public class sWIP {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("sWIP");
+        JFrame frame = new JFrame("SISAISMAEL");
         frame.setContentPane(new sWIP().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

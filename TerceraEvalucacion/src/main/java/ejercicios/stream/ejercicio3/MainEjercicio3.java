@@ -24,15 +24,20 @@ public class MainEjercicio3 {
 
         System.out.print("Letra: ");
         String letra = teclado.nextLine().substring(0,1).toLowerCase();
-        list.stream().filter(animal -> animal.toLowerCase().startsWith(letra)).forEach(n -> System.out.println(n + " "));
+        list.stream().filter(animal -> animal
+                .toLowerCase()
+                .startsWith(letra))
+                .forEach(n -> System.out.println(n + " "));
 
         System.out.println();
         System.out.println("Quien tiene el nombre mas largo ");
-        list.stream().sorted((p1,p2) -> p2.length() - p1.length()).max((a1, a2) -> a1.length() - a2.length()).stream().forEach(n -> System.out.println(n + " "));
+        list.stream().sorted((p1,p2) -> p2.length() - p1.length())
+                .max((a1, a2) -> a1.length() - a2.length())
+                .stream().forEach(n -> System.out.println(n + " "));
 
         System.out.println();
         System.out.println("IMPRIME CUATRO ");
-
+        
 
     }
 }

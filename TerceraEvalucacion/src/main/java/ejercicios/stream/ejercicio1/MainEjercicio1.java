@@ -12,7 +12,9 @@ public class MainEjercicio1 {
         for (int i = 0; i < 20; i++) {
             numero.add(generado.nextInt(1,16));
         }
-        numero.stream().sorted(Comparator.reverseOrder()).filter(n -> n >= 5).distinct().forEach(n -> System.out.println(n + " "));
+        numero.stream().sorted(Comparator.reverseOrder())
+                .filter(n -> n >= 5)
+                .distinct().forEach(n -> System.out.println(n + " "));
 
 
 

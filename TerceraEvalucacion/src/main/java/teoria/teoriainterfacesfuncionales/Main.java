@@ -24,14 +24,13 @@ public class Main {
         // 1. Comprueba si el parámetro recibido es un número impar.
         Impar impar = n -> n % 2 != 0;
         System.out.println(impar.esImpar(15));
-
-        //Comprueba si el parámetro es la letra ‘y’ (minúscula).
+     //Comprueba si el parámetro es la letra ‘y’ (minúscula).
         ComprobarY comprobar = c ->  c == 'y';
         System.out.println(comprobar.esy('Y'));
 
         //Devuelve la suma de dos números.
-        Sumar suma = (x, y) -> x + y;
-        System.out.printf("%.2f", suma.sumar(12.1, 12.2));
+        Sumar suma = (x,y) -> x + y;
+        System.out.printf("%.2f",suma.sumar(15,3.2));
 
         // Devuelve la suma de los cuadrados de dos números.
         SumaCuadrados sc = (a, b) -> ((int) Math.pow(a, 2) + (int) Math.pow(b, 2));
